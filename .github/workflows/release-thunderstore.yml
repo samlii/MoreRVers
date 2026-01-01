@@ -35,7 +35,8 @@ jobs:
       - name: Create Mod-Only package structure
         run: |
           mkdir -p thunderstore-package/mod       
-          cp -r Mods/MoreRVers/* thunderstore-package/mod
+          cp -r Mods/MoreRVers/scripts thunderstore-package/mod
+          cp -r Mods/MoreRVers/config.ini thunderstore-package/mod
           cp Package/Thunderstore/* thunderstore-package/
           touch thunderstore-package/mod/enabled.txt
       
