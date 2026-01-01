@@ -37,7 +37,7 @@ jobs:
           mkdir -p thunderstore-package/mod       
           cp -r Mods/MoreRVers/* thunderstore-package/mod
           cp Package/Thunderstore/* thunderstore-package/
-          touch thunderstore-package/MoreRVers/enabled.txt
+          touch thunderstore-package/mod/enabled.txt
       
       # ===== CREATE ZIP FILES =====
       - name: Create Thunderstore ZIP
