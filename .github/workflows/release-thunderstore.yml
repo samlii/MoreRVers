@@ -1,4 +1,4 @@
-name: Create Release Packages
+name: Create Thunderstore Packages
 
 on:
   release:
