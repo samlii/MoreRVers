@@ -38,6 +38,7 @@ jobs:
           cp -r Mods/MoreRVers/scripts thunderstore-package/mod
           cp -r Mods/MoreRVers/config.ini thunderstore-package/mod
           cp Package/Thunderstore/* thunderstore-package/
+          sed -i -E '/"version_number":/s/"([0-9]+)\.([0-9]+)\.([0-9]+)"/"${{ steps.get_version.outputs.version }}"/' thunderstore-package/manifest.json
           touch thunderstore-package/mod/enabled.txt
       
       # ===== CREATE ZIP FILES =====
