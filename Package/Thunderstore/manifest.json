@@ -5,6 +5,6 @@
     "description": "Adjust the number of players allowed in your RV",
     "website_url": "https://github.com/samlii/MoreRVers",
     "dependencies": [
-        "Thunderstore-unreal_shimloader-1.1.1"
+        "Thunderstore-unreal_shimloader-1.1.7"
     ]
 }
